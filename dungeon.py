@@ -131,7 +131,7 @@ class Dungeon(object):
         
     def get_offset_NESW(self, pos, offset):
         return (pos[0]+offset[0], pos[1]+offset[1])
-        
+
     def true_indexes(self, bool_list):
         return [index for index, value in enumerate(bool_list) if value]
 
