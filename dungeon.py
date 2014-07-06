@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import random
+import room
 
 NESW = ((0,-1), (1,0), (0,1), (-1,0))
 
@@ -9,7 +10,9 @@ class Room(object):
         self.x, self.y = x, y
         self.dungeon = get_dungeon()
         self.no_connections = random.choice(self.get_roomtype_connections())
+        self.layout = room.Layout(self.__class__.__name__)
 
+    def init(self): self.layout.init()
     def get_connections(self):
         return [self.dungeon.get_room_NESW(self.pos, pos) for pos in NESW]
 
@@ -51,7 +54,7 @@ class Dungeon(object):
         self.size = size
         self.num_rooms = random.choice(num_rooms)
         self.init_rooms = []
-        self.max_retries = 50
+        self.max_retries = 30
 
     def __str__(self):
         string = "+"+"-"*self.size[0]+"+\n"
@@ -68,6 +71,7 @@ class Dungeon(object):
         while not done:
             self.add_rooms()
             done = self.modify_rooms()
+        for room in self.init_rooms: room.init()
     
     def modify_rooms(self):
         terminator_types = [Boss, Shop, Treasure, Hidden]
@@ -159,6 +163,7 @@ class Main(object):
     def next_floor(self):
         self.current_floor+=1
         self.current_dungeon = self.dungeons[self.current_floor]
+        random.seed(hash(id(self)*self.current_floor))
         self.current_dungeon.init()
         print(self.current_dungeon)
 
