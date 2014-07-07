@@ -10,6 +10,8 @@ class Room(object):
         self.x, self.y = x, y
         self.dungeon = get_dungeon()
         self.no_connections = random.choice(self.get_roomtype_connections())
+        self.keys = []
+        self.locks = {}
         self.layout = room.Layout(self.__class__.__name__)
 
     def init(self): self.layout.init()
@@ -51,14 +53,16 @@ class Hidden(Terminator):
 
 class Dungeon(object):
     def __init__(self, size, num_rooms, floor):
-        self.size = size
+        self.size = list(size)
+        self.size[1]+=2
         self.num_rooms = random.choice(num_rooms)
         self.init_rooms = []
-        self.max_retries = 30
+        self.key_chance = 10
+        self.max_retries = 500
 
     def __str__(self):
         string = "+"+"-"*self.size[0]+"+\n"
-        for i_in, i in enumerate(self.pieces):
+        for i_in, i in enumerate(self.pieces[1:-1]):
             string+= "|"
             for j in i:
                 string+=str(j)
@@ -73,22 +77,6 @@ class Dungeon(object):
             done = self.modify_rooms()
         for room in self.init_rooms: room.init()
     
-    def modify_rooms(self):
-        terminator_types = [Boss, Shop, Treasure, Hidden]
-        shuffled_rooms = range(len(self.init_rooms))
-        random.shuffle(shuffled_rooms)
-        for room_index in shuffled_rooms:
-            room = self.init_rooms[room_index]
-            if self.get_no_empty_rooms(room.get_connections()) == 3 and room.__class__ == Corridor:
-                self.pieces[room.pos[0]][room.pos[1]] = Terminator(*room.pos)
-                self.init_rooms[room_index] = self.pieces[room.pos[0]][room.pos[1]]
-            if self.init_rooms[room_index].__class__ == Terminator and terminator_types != []:
-                pos = self.init_rooms[room_index].pos
-                new_type = terminator_types.pop()
-                self.pieces[pos[0]][pos[1]] = new_type(*pos)
-                self.init_rooms[room_index] = self.pieces[room.pos[0]][room.pos[1]]        
-        return terminator_types == []
-
     def add_rooms(self):
         self.init_pieces()
         self.init_rooms = []
@@ -104,21 +92,44 @@ class Dungeon(object):
         if room_number == 1:
             self.init_room(Start, (int(self.size[1]/2), int(self.size[0]/2)))
         else:
-            chosen = False
             i = 0
-            while not chosen:
+            no_keys = 0
+            while 1:
+                if i == self.max_retries: return False
                 i+=1
-                if i == self.max_retries:
-                    return False
                 room = random.choice(self.init_rooms)
                 empty_list = map(self.room_empty, room.get_connections())
                 if room.no_connections > 4-sum(empty_list):
                     room_type = random.choice(room.get_connection_types())
                     room_connections = self.true_indexes(empty_list)
-                    room_pos = self.get_offset_NESW(room.pos, NESW[random.choice(room_connections)])
-                    if self.get_no_empty_rooms(self.pieces[room_pos[0]][room_pos[1]].get_connections()) == 3:
+                    room_pos = self.get_offset_NESW(room.pos, \
+                        NESW[random.choice(room_connections)])
+                    if self.get_no_empty_rooms(\
+                            self.pieces[room_pos[0]][room_pos[1]].get_connections()) == 3:
                         self.init_room(room_type, room_pos)
-                        chosen = True
+                        if random.randrange(self.key_chance) == 0:
+                            no_keys+=1
+                            room.locks[self.get_room_offset(room.pos, room_pos)] = no_keys
+                            random.choice(self.init_rooms[:-1]).keys.append(no_keys)
+                            x = self.get_offset_NESW(room.pos, NESW[room.locks.keys()[-1]])
+                            return self.pieces[x[0]][x[1]] is self.init_rooms[-1]
+                        return True
+
+    def modify_rooms(self):
+        terminator_types = [Boss, Shop, Treasure, Hidden]
+        shuffled_rooms = range(len(self.init_rooms))
+        random.shuffle(shuffled_rooms)
+        for room_index in shuffled_rooms:
+            room = self.init_rooms[room_index]
+            if self.get_no_empty_rooms(room.get_connections()) == 3 and room.__class__ == Corridor:
+                self.pieces[room.pos[0]][room.pos[1]] = Terminator(*room.pos)
+                self.init_rooms[room_index] = self.pieces[room.pos[0]][room.pos[1]]
+            if self.init_rooms[room_index].__class__ == Terminator and terminator_types != []:
+                pos = self.init_rooms[room_index].pos
+                new_type = terminator_types.pop()
+                self.pieces[pos[0]][pos[1]] = new_type(*pos)
+                self.init_rooms[room_index] = self.pieces[room.pos[0]][room.pos[1]]        
+        return terminator_types == []
 
     def init_room(self, room_type, pos):
         self.pieces[pos[0]][pos[1]] = room_type(*pos)
@@ -136,6 +147,9 @@ class Dungeon(object):
     def get_offset_NESW(self, pos, offset):
         return (pos[0]+offset[0], pos[1]+offset[1])
 
+    def get_room_offset(self, pos_1, pos_2):
+        return NESW.index((pos_2[0]-pos_1[0], pos_2[1]-pos_1[1]))
+
     def true_indexes(self, bool_list):
         return [index for index, value in enumerate(bool_list) if value]
 
@@ -149,7 +163,7 @@ class Main(object):
     def __init__(self, floors):
         globals()["main"] = self
         self.floors = floors
-        self.size = (9, 6)
+        self.size = (10, 5)
         self.num_rooms = [(8,9), (11,12), (13,14), (16,17), (18,19)]
         self.num_rooms.extend([(20,) for i in range(floors-5)])
         self.dungeons = [Dungeon(self.size, self.num_rooms[i], i) for i in range(floors)]
@@ -163,7 +177,7 @@ class Main(object):
     def next_floor(self):
         self.current_floor+=1
         self.current_dungeon = self.dungeons[self.current_floor]
-        random.seed(hash(id(self)*self.current_floor))
+        #random.seed(hash(id(self)*self.current_floor))
         self.current_dungeon.init()
         print(self.current_dungeon)
 
