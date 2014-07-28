@@ -1,0 +1,11 @@
+<page id="map1Finished" source="levels/menu/menu.nml" groupName="classicsFinished">
+	<item id="classicsFinished_ok" object="classicsFinished_ok" initItem backItem onClick="runSequence('backToMap');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+	<script>
+		sequence backToMap()
+		{
+			playSound('menu_select');
+			setPage('main_menu');
+			setMapPage();
+		}
+	</script>
+</page>

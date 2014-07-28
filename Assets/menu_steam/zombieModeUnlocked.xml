@@ -1,0 +1,11 @@
+<page id="zombieModeUnlocked" source="levels/menu/menu.nml" groupName="zombieModeUnlocked">
+	<item id="zombie_ok" object="zombie_ok" initItem backItem onClick="runSequence('backToMainMenu');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<script>
+		sequence backToMainMenu()
+		{
+			playSound('menu_select');
+			setPage('main_menu');
+		}
+	</script>
+</page>

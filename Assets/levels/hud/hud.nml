@@ -1,0 +1,966 @@
+<?xml version="1.0"?>
+<level version="0.1">
+	<instances>
+		<instance iid="1" name="pause.background" group="pause">
+			<objectref set="/Windows" filename="game_messagebox" />
+			<frame time="0.000000">
+				<position x="640.000000" y="445.500000" z="5.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="2" name="pause.title" group="pause">
+			<objectref set="/Screens/mainmenu" filename="labelGamePaused" />
+			<frame time="0.000000">
+				<position x="640.500000" y="550.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="3" name="pause.return_to_game" group="pause">
+			<objectref set="/Screens/mainmenu" filename="buttonReturnToGame" />
+			<frame time="0.000000">
+				<position x="630.000000" y="480.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="4" name="pause.return_to_game_highlighted" group="pause">
+			<objectref set="/Screens/mainmenu" filename="buttonReturnToGameHighlighted" />
+			<frame time="0.000000">
+				<position x="630.000000" y="480.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="5" name="pause.back_to_map" group="pause">
+			<objectref set="/Screens/mainmenu" filename="buttonBackToMap" />
+			<frame time="0.000000">
+				<position x="630.000000" y="390.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="6" name="pause.back_to_map_highlighted" group="pause">
+			<objectref set="/Screens/mainmenu" filename="buttonBackToMapHighlighted" />
+			<frame time="0.000000">
+				<position x="630.000000" y="390.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="7" name="win.background" group="player_win">
+			<objectref set="/Windows" filename="win_lose_pergament" />
+			<frame time="0.000000">
+				<position x="640.000000" y="425.000000" z="15.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="8" name="win.title" group="player_win">
+			<objectref set="/Screens/mainmenu" filename="labelWin" />
+			<frame time="0.000000">
+				<position x="640.500000" y="615.000000" z="14.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="9" name="win.continue" group="player_win">
+			<objectref set="/Screens/mainmenu" filename="buttonContinue" />
+			<frame time="0.000000">
+				<position x="554.000000" y="255.000000" z="13.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="10" name="win.perfect" group="player_win">
+			<objectref set="/Windows" filename="youWin_perfect" />
+			<frame time="0.000000">
+				<position x="412.000000" y="661.000000" z="13.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="11" name="lose.background" group="player_lose">
+			<objectref set="/Windows" filename="win_lose_pergament" />
+			<frame time="0.000000">
+				<position x="640.000000" y="425.000000" z="15.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="12" name="lose.run_out_of_lives" group="player_lose">
+			<objectref set="/Screens/mainmenu" filename="labelLose1" />
+			<frame time="0.000000">
+				<position x="640.500000" y="615.000000" z="14.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="13" name="lose.run_out_of_time" group="player_lose">
+			<objectref set="/Screens/mainmenu" filename="labelLose2" />
+			<frame time="0.000000">
+				<position x="640.500000" y="615.000000" z="14.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="14" name="lose.back_to_map" group="player_lose">
+			<objectref set="/Screens/mainmenu" filename="buttonBackToMap" />
+			<frame time="0.000000">
+				<position x="560.000000" y="330.000000" z="14.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="15" name="lose.back_to_map_highlighted" group="player_lose">
+			<objectref set="/Screens/mainmenu" filename="buttonBackToMapHighlighted" />
+			<frame time="0.000000">
+				<position x="560.000000" y="330.000000" z="14.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="16" name="lose.quit_to_menu" group="player_lose">
+			<objectref set="/Screens/mainmenu" filename="buttonQuitToMenu" />
+			<frame time="0.000000">
+				<position x="560.000000" y="280.000000" z="14.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="17" name="lose.quit_to_menu_highlighted" group="player_lose">
+			<objectref set="/Screens/mainmenu" filename="buttonQuitToMenuHighlighted" />
+			<frame time="0.000000">
+				<position x="560.000000" y="280.000000" z="14.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="18" name="hudTime">
+			<objectref set="/Screens/mainmenu" filename="hudTime" />
+			<frame time="0.000000">
+				<position x="337.000000" y="62.000000" z="19.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="19" name="hudLevel">
+			<objectref set="/Screens/mainmenu" filename="hudLevel" />
+			<frame time="0.000000">
+				<position x="466.000000" y="62.000000" z="19.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="20" name="hudScore">
+			<objectref set="/Screens/mainmenu" filename="hudScore" />
+			<frame time="0.000000">
+				<position x="640.000000" y="64.000000" z="19.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="21" name="hudLives">
+			<objectref set="/Screens/mainmenu" filename="hudLives" />
+			<frame time="0.000000">
+				<position x="804.000000" y="62.000000" z="19.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="22" name="hudToDo">
+			<objectref set="/Screens/mainmenu" filename="hudToDo" />
+			<frame time="0.000000">
+				<position x="944.000000" y="62.000000" z="19.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="23" name="lose.hero" group="player_lose">
+			<objectref set="/Windows" filename="youLose_hero" />
+			<frame time="0.000000">
+				<position x="764.500000" y="342.500000" z="14.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="24" name="lose.retry" group="player_lose">
+			<objectref set="/Screens/mainmenu" filename="buttonRetry" />
+			<frame time="0.000000">
+				<position x="560.000000" y="380.000000" z="14.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="25" name="lose.retry_highlighted" group="player_lose">
+			<objectref set="/Screens/mainmenu" filename="buttonRetryHighlighted" />
+			<frame time="0.000000">
+				<position x="560.000000" y="380.000000" z="14.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="26" name="monsterDescription_background" group="monster_description">
+			<objectref set="/Windows" filename="win_lose_pergament" />
+			<frame time="0.000000">
+				<position x="640.000000" y="435.000000" z="5.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="27" name="monsterDescription_OK" group="monster_description">
+			<objectref set="/Screens/mainmenu" filename="buttonOk" />
+			<frame time="0.000000">
+				<position x="794.000000" y="261.000000" z="2.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="28" name="monsterDescription_ancientTower" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_ancientTower" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="29" name="monsterDescription_newMonster" group="monster_description">
+			<objectref set="/Screens/mainmenu" filename="labelNewMonster" />
+			<frame time="0.000000">
+				<position x="640.500000" y="624.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="30" name="pause.retry" group="pause">
+			<objectref set="/Screens/mainmenu" filename="buttonRetry" />
+			<frame time="0.000000">
+				<position x="630.000000" y="435.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="31" name="pause.retry_highlighted" group="pause">
+			<objectref set="/Screens/mainmenu" filename="buttonRetryHighlighted" />
+			<frame time="0.000000">
+				<position x="630.000000" y="435.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="32" name="win.hero" group="player_win">
+			<objectref set="/Windows" filename="youWin_hero" />
+			<frame time="0.000000">
+				<position x="792.500000" y="373.000000" z="14.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="33" name="pause.squirrelBlink" group="pause">
+			<objectref set="/Windows" filename="game_messagebox_squirrelBlink" />
+			<frame time="0.000000">
+				<position x="775.000000" y="417.500000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="34" name="monsterDescription_blackDragon" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_blackDragon" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="35" name="monsterDescription_bloodBat" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_bloodBat" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="36" name="monsterDescription_boneDragon" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_boneDragon" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="37" name="monsterDescription_greenDragon" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_greenDragon" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="38" name="monsterDescription_tower" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_tower" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="39" name="monsterDescription_xitrof" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_xitrof" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="40" name="monsterDescription_OK_highlighted" group="monster_description">
+			<objectref set="/Screens/mainmenu" filename="buttonOkHighlighted" />
+			<frame time="0.000000">
+				<position x="794.000000" y="261.000000" z="2.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="41" name="win.continue_highlighted" group="player_win">
+			<objectref set="/Screens/mainmenu" filename="buttonContinueHighlighted" />
+			<frame time="0.000000">
+				<position x="554.000000" y="255.000000" z="13.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="42" name="confirm.background" group="confirm">
+			<objectref set="/Windows" filename="game_messagebox" />
+			<frame time="0.000000">
+				<position x="640.000000" y="445.500000" z="5.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="43" name="confirm.ok" group="confirm">
+			<objectref set="/Screens/mainmenu" filename="buttonOk" />
+			<frame time="0.000000">
+				<position x="520.000000" y="400.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="44" name="confirm.ok_highlighted" group="confirm">
+			<objectref set="/Screens/mainmenu" filename="buttonOkHighlighted" />
+			<frame time="0.000000">
+				<position x="520.000000" y="400.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="45" name="confirm.back" group="confirm">
+			<objectref set="/Screens/mainmenu" filename="buttonBack" />
+			<frame time="0.000000">
+				<position x="642.500000" y="400.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="46" name="confirm.back_highlighted" group="confirm">
+			<objectref set="/Screens/mainmenu" filename="buttonBackHighlighted" />
+			<frame time="0.000000">
+				<position x="642.500000" y="400.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="47" name="monsterDescription_newBuilding" group="monster_description">
+			<objectref set="/Screens/mainmenu" filename="labelNewBuilding" />
+			<frame time="0.000000">
+				<position x="640.500000" y="624.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="48" name="time_remaining">
+			<frame time="0.000000">
+				<position x="295.000000" y="38.000000" z="19.000000" />
+				<rotation _11="0.450000" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.450000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="49" name="level">
+			<frame time="0.000000">
+				<position x="466.000000" y="38.000000" z="19.000000" />
+				<rotation _11="0.450000" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.450000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="50" name="score">
+			<frame time="0.000000">
+				<position x="640.000000" y="38.000000" z="19.000000" />
+				<rotation _11="0.476471" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.476471" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="51" name="lives">
+			<frame time="0.000000">
+				<position x="804.000000" y="38.000000" z="19.000000" />
+				<rotation _11="0.450000" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.450000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="52" name="toDo_shields">
+			<frame time="0.000000">
+				<position x="923.000000" y="38.000000" z="19.000000" />
+				<rotation _11="0.450000" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.450000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="53" name="win_stats_0_description" group="player_win">
+			<frame time="0.000000">
+				<position x="439.000000" y="548.000000" z="13.000000" />
+				<rotation _11="0.323529" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.323529" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="54" name="win_stats_0_score" group="player_win">
+			<frame time="0.000000">
+				<position x="707.000000" y="548.000000" z="12.900000" />
+				<rotation _11="0.352941" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.352941" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="55" name="win_stats_1_description" group="player_win">
+			<frame time="0.000000">
+				<position x="439.000000" y="504.000000" z="13.000000" />
+				<rotation _11="0.323529" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.323529" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="56" name="win_stats_1_score" group="player_win">
+			<frame time="0.000000">
+				<position x="707.000000" y="504.000000" z="12.900000" />
+				<rotation _11="0.352941" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.352941" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="57" name="win_stats_2_description" group="player_win">
+			<frame time="0.000000">
+				<position x="439.000000" y="460.000000" z="13.000000" />
+				<rotation _11="0.323529" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.323529" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="58" name="win_stats_2_score" group="player_win">
+			<frame time="0.000000">
+				<position x="707.000000" y="460.000000" z="12.900000" />
+				<rotation _11="0.352941" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.352941" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="59" name="win_stats_3_description" group="player_win">
+			<frame time="0.000000">
+				<position x="439.000000" y="416.000000" z="13.000000" />
+				<rotation _11="0.323529" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.323529" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="60" name="win_stats_3_score" group="player_win">
+			<frame time="0.000000">
+				<position x="426.000000" y="374.000000" z="12.900000" />
+				<rotation _11="0.761176" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.761176" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="61" name="playerWin.line" group="player_win">
+			<objectref set="/Windows" filename="youWin_line" />
+			<frame time="0.000000">
+				<position x="571.000000" y="436.000000" z="13.000000" />
+				<rotation _11="290.00000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="62" name="hud.pause" group="tablet">
+			<objectref set="/Windows" filename="touch_pause" />
+			<frame time="0.000000">
+				<position x="1225.000000" y="49.000000" z="13.000000" />
+				<rotation _11="1.00000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="65" name="monsterDescription_monsterIcon" group="monster_description">
+			<frame time="0.000000">
+				<position x="748.000000" y="507.000000" z="2.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="66" name="confirm.question_line0" group="confirm">
+			<frame time="0.000000">
+				<position x="640.000000" y="530.000000" z="4.000000" />
+				<rotation _11="0.400000" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.400000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="67" name="confirm.question_line1" group="confirm">
+			<frame time="0.000000">
+				<position x="640.000000" y="490.000000" z="4.000000" />
+				<rotation _11="0.400000" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.400000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="68" name="monsterDescription_darkTower" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_magicTower" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="69" name="monsterDescription_magicOrb" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_magicOrb" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="70" name="monsterDescription_gate" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_gate" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="71" name="monsterDescription_wall" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_wall" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="72" name="monsterDescription_batCave" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_batCave" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="73" name="monsterDescription_orcTower" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_orcTower" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="74" name="monsterDescription_ballista" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_ballista" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="75" name="monsterDescription_ogre" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_ogre" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="76" name="tutorial.pergamentSmall" group="tutorial">
+			<objectref set="/Windows" filename="menu_messagebox" />
+			<frame time="0.000000">
+				<position x="355.500000" y="602.000000" z="64.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="77" name="tutorial.pergamentLarge" group="tutorial">
+			<objectref set="/Windows" filename="win_lose_pergament" />
+			<frame time="0.000000">
+				<position x="640.000000" y="400.000000" z="7.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="78" name="tutorial.controlInfo" group="tutorial">
+			<objectref set="/Windows" filename="controlInfo" />
+			<frame time="0.000000">
+				<position x="640.000000" y="420.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="79" name="tutorial.moving" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_moving" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="80" name="tutorial.conquering" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_conquering" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="81" name="tutorial.waterAndSwamp" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_waterAndSwamp" />
+			<frame time="0.000000">
+				<position x="756.500000" y="500.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="82" name="tutorial.firstLandConquered" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_firstLandConquered" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="83" name="tutorial.captureTheBadge" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_captureTheBadge" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="84" name="tutorial.firstBadgeCaptured" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_firstBadgeCaptured" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="85" name="tutorial.aimOfTheGame" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_aimOfTheGame" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="86" name="tutorial.dragonIntroduction" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_dragonIntroduction" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="87" name="tutorial.killADragon" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_killADragon" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="88" name="tutorial.dragonKilled" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_dragonKilled" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="89" name="tutorial.towerIntroduction" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_towerIntroduction" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="90" name="tutorial.catapultIntroduction" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_catapultIntroduction" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="91" name="tutorial.towerDestroyed" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_towerDestroyed" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="92" name="tutorial.powerupIntroduction" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_powerupIntroduction" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="93" name="tutorial.powerupCaptured" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_powerupCaptured" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="95" name="tutorial.lastBadgeToCapture" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_lastBadgeToCapture" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="96" name="tutorial.completed" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_completed" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="5.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="97" name="tutorial.OK" group="tutorial">
+			<objectref set="/Screens/mainmenu" filename="buttonOk" />
+			<frame time="0.000000">
+				<position x="355.000000" y="507.000000" z="3.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="98" name="tutorial.OKHighlighted" group="tutorial">
+			<objectref set="/Screens/mainmenu" filename="buttonOkHighlighted" />
+			<frame time="0.000000">
+				<position x="355.000000" y="507.000000" z="3.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="99" name="tutorial.pergamentTiny" group="tutorial">
+			<objectref set="/Windows" filename="achi_messagebox" />
+			<frame time="0.000000">
+				<position x="355.500000" y="640.500000" z="64.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="100" name="tutorial.pergamentWater" group="tutorial">
+			<objectref set="/Windows" filename="achi_messagebox" />
+			<frame time="0.000000">
+				<position x="756.500000" y="563.500000" z="64.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="101" name="achiUnlocked.bck" group="achievement">
+			<objectref set="/Windows" filename="achi_messagebox" />
+			<frame time="0.000000">
+				<position x="1044.500000" y="677.500000" z="12.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="102" name="achiUnlocked.title" group="achievement">
+			<objectref set="/Screens/mainmenu" filename="labelAchiUnlocked" />
+			<frame time="0.000000">
+				<position x="1049.500000" y="741.000000" z="11.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="104" name="achiUnlocked.text" group="achievement">
+			<frame time="0.000000">
+				<position x="1003.000000" y="663.000000" z="11.000000" />
+				<rotation _11="0.250000" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.250000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="105" name="monsterDescription_redDragon" group="monster_description">
+			<objectref set="/Windows" filename="monsterInfo_redDragon" />
+			<frame time="0.000000">
+				<position x="640.000000" y="419.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="106" name="tutorial.padreTuto" group="tutorial">
+			<objectref set="/Windows" filename="padreTuto" />
+			<frame time="0.000000">
+				<position x="173.500000" y="675.500000" z="63.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="107" name="toDo_towers">
+			<frame time="0.000000">
+				<position x="977.000000" y="38.000000" z="19.000000" />
+				<rotation _11="0.450000" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.450000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="108" name="hud">
+			<objectref set="/Windows" filename="hud" />
+			<frame time="0.000000">
+				<position x="640.500000" y="48.500000" z="20.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="109" name="tutorial.greetingsSir" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_greetingsSir" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="110" name="tutorial.greetingsLady" group="tutorial">
+			<objectref set="/Windows" filename="tutorial_greetingsLady" />
+			<frame time="0.000000">
+				<position x="355.500000" y="627.000000" z="6.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="111" name="toDo_graves">
+			<frame time="0.000000">
+				<position x="946.000000" y="38.000000" z="19.000000" />
+				<rotation _11="0.450000" _12="0.000000" _13="0.000000" _21="0.000000" _22="0.450000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="112" name="padre_hint" group="monster_description">
+			<objectref set="/Windows" filename="padreTuto" />
+			<frame time="0.000000">
+				<position x="458.500000" y="469.500000" z="3.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="113" name="hint_background" group="monster_description">
+			<objectref set="/Windows" filename="achi_messagebox" />
+			<frame time="0.000000">
+				<position x="640.000000" y="435.000000" z="5.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="114" name="runInfo" group="monster_description">
+			<objectref set="/Windows" filename="runInfo" />
+			<frame time="0.000000">
+				<position x="645.000000" y="455.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="115" name="zombieInfo" group="monster_description">
+			<objectref set="/Windows" filename="zombieInfo" />
+			<frame time="0.000000">
+				<position x="645.000000" y="455.000000" z="4.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="116" name="star_0" group="player_win">
+			<objectref set="/Windows" filename="star" />
+			<frame time="0.000000">
+				<position x="445.000000" y="313.000000" z="13.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="117" name="star_1" group="player_win">
+			<objectref set="/Windows" filename="star" />
+			<frame time="0.000000">
+				<position x="489.000000" y="313.000000" z="13.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="118" name="star_2" group="player_win">
+			<objectref set="/Windows" filename="star" />
+			<frame time="0.000000">
+				<position x="533.000000" y="313.000000" z="13.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="119" name="captureIndicator">
+			<objectref set="/Windows" filename="warning_circle" />
+			<frame time="0.000000">
+				<position x="640.000000" y="49.000000" z="21.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="120" name="achi00">
+			<objectref set="/Common/achievements" filename="achi_00" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="121" name="achi01">
+			<objectref set="/Common/achievements" filename="achi_01" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="122" name="achi02">
+			<objectref set="/Common/achievements" filename="achi_02" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="123" name="achi03">
+			<objectref set="/Common/achievements" filename="achi_03" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="124" name="achi04">
+			<objectref set="/Common/achievements" filename="achi_04" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="125" name="achi05">
+			<objectref set="/Common/achievements" filename="achi_05" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="126" name="achi06">
+			<objectref set="/Common/achievements" filename="achi_06" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="127" name="achi07">
+			<objectref set="/Common/achievements" filename="achi_07" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="128" name="achi08">
+			<objectref set="/Common/achievements" filename="achi_08" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="129" name="achi09">
+			<objectref set="/Common/achievements" filename="achi_09" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="130" name="achi10">
+			<objectref set="/Common/achievements" filename="achi_10" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="131" name="achi11">
+			<objectref set="/Common/achievements" filename="achi_11" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="132" name="achi12">
+			<objectref set="/Common/achievements" filename="achi_12" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="133" name="achi13">
+			<objectref set="/Common/achievements" filename="achi_13" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="134" name="achi14">
+			<objectref set="/Common/achievements" filename="achi_14" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="135" name="achi15">
+			<objectref set="/Common/achievements" filename="achi_15" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="136" name="achi16">
+			<objectref set="/Common/achievements" filename="achi_16" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="137" name="achi17">
+			<objectref set="/Common/achievements" filename="achi_17" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="138" name="achi18">
+			<objectref set="/Common/achievements" filename="achi_18" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="139" name="achi19">
+			<objectref set="/Common/achievements" filename="achi_19" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="140" name="achi20">
+			<objectref set="/Common/achievements" filename="achi_20" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="141" name="achi21">
+			<objectref set="/Common/achievements" filename="achi_21" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="142" name="achi22">
+			<objectref set="/Common/achievements" filename="achi_22" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="143" name="achi23">
+			<objectref set="/Common/achievements" filename="achi_23" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="144" name="achi24">
+			<objectref set="/Common/achievements" filename="achi_24" />
+			<frame time="0.000000">
+				<position x="946.000000" y="662.000000" z="1.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+	</instances>
+</level>

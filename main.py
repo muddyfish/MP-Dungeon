@@ -1,22 +1,27 @@
-from game import *
-from message import *
 import pygame, glob, json, os, sys
+os.chdir("/".join(os.path.realpath(__file__).split(os.sep)[:-1]))
+sys.path.append(os.getcwd()+os.sep+"Assets"+os.sep+"Code")
+
+from title import Title
+from main_menu import MainMenu
+
 class Main:  
     def __init__(self):
         #Init pygame
         pygame.init()
+        self.pygame = pygame
         self.load_settings()
         if self.settings["fullscreen"]: self.full = pygame.FULLSCREEN
         else: self.full = 0
         #Create the display
         self.screen = pygame.display.set_mode(tuple(self.settings["size"]), self.full) 
         pygame.display.set_caption("MP-Dungeon")
-        self.font=pygame.font.Font("Fonts/rusa.ttf", 12)
+        self.font=pygame.font.SysFont("vervanda", 12)
         self.fps_colour = pygame.Color(255,255,255)
         self.clock=pygame.time.Clock()
-        self.controllers = {"game": Game, \
-                            "message": Message}
-        self.screen_controller = Game(self, pygame)
+        self.controllers = {"title": Title,
+                            "main_menu": MainMenu}
+        self.set_controller("title")
 
     def run(self):
         while 1:
@@ -34,9 +39,6 @@ class Main:
 
     def set_controller(self, controller, *args, **kwargs):
         self.screen_controller = self.controllers[controller](self, pygame, *args, **kwargs)
-
-    def debug_message(self, message):
-        self.set_controller("message", message, bg = (136,144,248), return_to = self.screen_controller)
 
     def screenshot(self):
         print("Screenshot")
@@ -58,6 +60,14 @@ class Main:
         file_obj = open("settings.json", "w")
         self.settings = json.dump(file_obj)
         file_obj.close()
+
+    def load_file(self, filename_orig):
+        return open(filename_orig.replace("/", os.sep))
+
+    def load_image(self, texture_location):
+        if texture_location[0] == "/": texture_location = texture_location[1:]
+        image = pygame.image.load(self.load_file("Assets/textures/"+texture_location), ".tga")
+        return image
 
 def main():
     os.environ['SDL_VIDEO_CENTERED'] = '1'

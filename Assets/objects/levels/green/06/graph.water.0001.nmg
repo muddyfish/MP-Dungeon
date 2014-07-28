@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<graph version="0.1">
+	<points>
+		<point id="0">
+			<position x="409.000031" y="777.000000" z="1.000000" />
+		</point>
+		<point id="1">
+			<position x="439.000031" y="739.999207" z="1.000000" />
+		</point>
+		<point id="2">
+			<position x="442.000031" y="717.000000" z="1.000000" />
+		</point>
+		<point id="3">
+			<position x="495.000000" y="689.000000" z="1.000000" />
+		</point>
+		<point id="4">
+			<position x="528.000000" y="632.000000" z="1.000000" />
+		</point>
+		<point id="5">
+			<position x="562.000000" y="587.000000" z="1.000000" />
+		</point>
+		<point id="6">
+			<position x="543.000000" y="558.000000" z="1.000000" />
+		</point>
+		<point id="7">
+			<position x="541.000000" y="516.000000" z="1.000000" />
+		</point>
+		<point id="8">
+			<position x="553.000000" y="485.000000" z="1.000000" />
+		</point>
+		<point id="9">
+			<position x="584.000000" y="467.999969" z="1.000000" />
+		</point>
+		<point id="10">
+			<position x="570.000000" y="459.000000" z="1.000000" />
+		</point>
+		<point id="11">
+			<position x="587.000000" y="442.000000" z="1.000000" />
+		</point>
+		<point id="12">
+			<position x="700.000000" y="442.000000" z="1.000000" />
+		</point>
+		<point id="13">
+			<position x="716.999939" y="478.000000" z="1.000000" />
+		</point>
+		<point id="14">
+			<position x="701.000000" y="522.000000" z="1.000000" />
+		</point>
+		<point id="15">
+			<position x="674.000000" y="538.000000" z="1.000000" />
+		</point>
+		<point id="16">
+			<position x="685.000000" y="560.000000" z="1.000000" />
+		</point>
+		<point id="17">
+			<position x="659.000000" y="632.000000" z="1.000000" />
+		</point>
+		<point id="18">
+			<position x="592.000000" y="678.999512" z="1.000000" />
+		</point>
+		<point id="19">
+			<position x="565.000000" y="758.999756" z="1.000000" />
+		</point>
+		<point id="20">
+			<position x="582.000000" y="782.000000" z="1.000000" />
+		</point>
+	</points>
+	<edges>
+		<edge start="0" end="1" />
+		<edge start="1" end="2" />
+		<edge start="2" end="3" />
+		<edge start="3" end="4" />
+		<edge start="4" end="5" />
+		<edge start="5" end="6" />
+		<edge start="6" end="7" />
+		<edge start="7" end="8" />
+		<edge start="8" end="9" />
+		<edge start="9" end="10" />
+		<edge start="10" end="11" />
+		<edge start="11" end="12" />
+		<edge start="12" end="13" />
+		<edge start="13" end="14" />
+		<edge start="14" end="15" />
+		<edge start="15" end="16" />
+		<edge start="16" end="17" />
+		<edge start="17" end="18" />
+		<edge start="18" end="19" />
+		<edge start="19" end="20" />
+		<edge start="20" end="0" />
+	</edges>
+</graph>

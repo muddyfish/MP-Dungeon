@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<graph version="0.1">
+	<points>
+		<point id="0">
+			<position x="495.000000" y="433.000000" z="1.000000" />
+		</point>
+		<point id="1">
+			<position x="788.000000" y="433.000000" z="1.000000" />
+		</point>
+	</points>
+	<edges>
+		<edge start="0" end="1" />
+	</edges>
+</graph>

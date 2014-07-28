@@ -1,0 +1,16 @@
+<page id="msgBoxTryOtherDifficulty" source="levels/menu/menu.nml" groupName="msgBoxTryOtherDifficulty">
+
+	<label object="msgBoxTryOtherDifficulty_text1" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="middle">Try to complete the levels</label>
+	<label object="msgBoxTryOtherDifficulty_text2" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="middle">on other difficulties</label>
+	<label object="msgBoxTryOtherDifficulty_text3" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="middle">for more challenge!</label>
+
+	<item id="msgBoxTryOtherDifficulty_buttonOK" object="msgBoxTryOtherDifficulty_buttonOK" onClick="runFunction('backToProfileSettingsPage');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<script>
+		function backToProfileSettingsPage()
+		{
+			playSound('menu_select');
+			setPage('profile_settings');
+		}
+	</script>
+</page>

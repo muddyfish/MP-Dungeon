@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<graph version="0.1">
+	<points>
+		<point id="0">
+			<position x="428.000000" y="136.000031" z="1.000000" />
+		</point>
+		<point id="1">
+			<position x="355.000031" y="158.000015" z="1.000000" />
+		</point>
+		<point id="2">
+			<position x="255.000031" y="154.000015" z="1.000000" />
+		</point>
+		<point id="3">
+			<position x="187.000061" y="144.000031" z="1.000000" />
+		</point>
+		<point id="4">
+			<position x="137.000061" y="176.000015" z="1.000000" />
+		</point>
+		<point id="5">
+			<position x="100.000061" y="259.000000" z="1.000000" />
+		</point>
+		<point id="6">
+			<position x="91.000061" y="337.000000" z="1.000000" />
+		</point>
+		<point id="7">
+			<position x="142.000061" y="485.000000" z="1.000000" />
+		</point>
+		<point id="8">
+			<position x="129.000061" y="569.000000" z="1.000000" />
+		</point>
+		<point id="9">
+			<position x="134.000061" y="626.000000" z="1.000000" />
+		</point>
+		<point id="10">
+			<position x="91.000061" y="661.000000" z="1.000000" />
+		</point>
+		<point id="11">
+			<position x="105.000061" y="726.000000" z="1.000000" />
+		</point>
+		<point id="12">
+			<position x="202.000061" y="780.000000" z="1.000000" />
+		</point>
+		<point id="13">
+			<position x="29.000061" y="778.000000" z="1.000000" />
+		</point>
+		<point id="14">
+			<position x="24.000061" y="699.000000" z="1.000000" />
+		</point>
+		<point id="15">
+			<position x="58.000854" y="654.999756" z="1.000000" />
+		</point>
+		<point id="16">
+			<position x="74.000061" y="589.000000" z="1.000000" />
+		</point>
+		<point id="17">
+			<position x="64.000732" y="345.000000" z="1.000000" />
+		</point>
+		<point id="18">
+			<position x="46.000061" y="297.000000" z="1.000000" />
+		</point>
+		<point id="19">
+			<position x="44.002563" y="202.000504" z="1.000000" />
+		</point>
+		<point id="20">
+			<position x="92.002869" y="131.001450" z="1.000000" />
+		</point>
+		<point id="21">
+			<position x="178.000031" y="113.000031" z="1.000000" />
+		</point>
+		<point id="22">
+			<position x="307.000031" y="145.000031" z="1.000000" />
+		</point>
+	</points>
+	<edges>
+		<edge start="0" end="1" />
+		<edge start="1" end="2" />
+		<edge start="2" end="3" />
+		<edge start="3" end="4" />
+		<edge start="4" end="5" />
+		<edge start="5" end="6" />
+		<edge start="6" end="7" />
+		<edge start="7" end="8" />
+		<edge start="8" end="9" />
+		<edge start="9" end="10" />
+		<edge start="10" end="11" />
+		<edge start="11" end="12" />
+		<edge start="12" end="13" />
+		<edge start="13" end="14" />
+		<edge start="14" end="15" />
+		<edge start="15" end="16" />
+		<edge start="16" end="17" />
+		<edge start="17" end="18" />
+		<edge start="18" end="19" />
+		<edge start="19" end="20" />
+		<edge start="20" end="21" />
+		<edge start="21" end="22" />
+		<edge start="22" end="0" />
+	</edges>
+</graph>

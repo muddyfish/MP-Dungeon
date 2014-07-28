@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<graph version="0.1">
+	<points>
+		<point id="0">
+			<position x="850.000000" y="780.000000" z="1.000000" />
+		</point>
+		<point id="1">
+			<position x="833.000000" y="713.000000" z="1.000000" />
+		</point>
+		<point id="2">
+			<position x="865.000000" y="684.000000" z="1.000000" />
+		</point>
+		<point id="3">
+			<position x="881.999939" y="680.000000" z="1.000000" />
+		</point>
+		<point id="4">
+			<position x="930.000000" y="702.000000" z="1.000000" />
+		</point>
+		<point id="5">
+			<position x="960.000000" y="756.000000" z="1.000000" />
+		</point>
+		<point id="6">
+			<position x="1052.000000" y="779.000000" z="1.000000" />
+		</point>
+	</points>
+	<edges>
+		<edge start="0" end="1" />
+		<edge start="1" end="2" />
+		<edge start="2" end="3" />
+		<edge start="3" end="4" />
+		<edge start="4" end="5" />
+		<edge start="5" end="6" />
+		<edge start="6" end="0" />
+	</edges>
+</graph>

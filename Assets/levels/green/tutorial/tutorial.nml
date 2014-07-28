@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<level version="0.1">
+	<properties>
+		<property key="script" value="fortix2LevelScript" />
+		<property key="backgroundMaterial" value="/levels/green/tutorial/tutorial" />
+		<property key="levelTime" value="180" />
+	</properties>
+	<instances>
+		<instance iid="1" name="graph.water.0000">
+			<graphref set="/levels/green/tutorial" filename="graph.water.0000" />
+		</instance>
+		<instance iid="2" name="graph.swamp.0000">
+			<graphref set="/levels/green/tutorial" filename="graph.swamp.0000" />
+		</instance>
+		<instance iid="3" name="background" group="pc">
+			<objectref set="/levels/green/tutorial" filename="background" />
+			<frame time="0.000000">
+				<position x="640.000000" y="400.000000" z="200.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="4" name="background_b" group="pc">
+			<objectref set="/levels/green/tutorial" filename="background_b" />
+			<frame time="0.000000">
+				<position x="640.000000" y="400.000000" z="90.099998" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="5" name="tower.000">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="1034.000000" y="445.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="6" name="catapultPos">
+			<frame time="0.000000">
+				<position x="1034.000000" y="700.000000" z="70.000000" />
+				<rotation _11="-0.763336" _12="0.646001" _13="0.000000" _21="-0.646001" _22="-0.763336" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="7" name="dragonPos">
+			<frame time="0.000000">
+				<position x="730.000000" y="188.000000" z="39.000000" />
+				<rotation _11="1.00000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="8" name="powerupPos">
+			<frame time="0.000000">
+				<position x="1050.000000" y="238.000000" z="39.300000" />
+				<rotation _11="1.00000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="9" name="level_flag.000" group="level_flag">
+			<objectref set="/Common/level_flag" filename="level_flag" />
+			<frame time="0.000000">
+				<position x="714.000000" y="356.000000" z="78.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="10" name="level_flag.001" group="level_flag">
+			<objectref set="/Common/level_flag" filename="level_flag" />
+			<frame time="0.000000">
+				<position x="949.000000" y="228.000000" z="78.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="11" name="player">
+			<frame time="0.000000">
+				<position x="28.000000" y="300.000000" z="60.000000" />
+				<rotation _11="0.000000" _12="-1.000000" _13="0.000000" _21="1.000000" _22="0.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+	</instances>
+</level>
