@@ -1,0 +1,17 @@
+<page id="story" source="levels/menu/menu.nml" groupName="story">
+	<item id="story_ok" object="story_ok" onClick="runSequence('backToMapPage');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<script>
+		sequence backToMapPage()
+		{
+			playSound('menu_select');
+			fadeOut(0.5, false);
+			setPage('map');
+			unbindMaterial('/Screens/storyscreen/storyscreen_flat');
+			waitFrame(1);
+			showNewLandTypeIfNeeded(true);
+			waitFrame(2);
+			fadeIn(0.5, false);
+		}
+	</script>
+</page>

@@ -1,0 +1,71 @@
+<page id="main_menu" source="levels/menu/menu.nml" groupName="main_menu" script="fortix2MenuMainMenuPageScript">
+	<label id="mainMenu_title1" object="mainMenu_welcome1" font="Otari-Bold_simple" colorR="0.286275" colorG="0.498039" colorB="0.478431" align="left">Welcome</label>
+	<label id="mainMenu_title2" object="mainMenu_welcome2" font="Otari-Bold_simple" colorR="0.286275" colorG="0.498039" colorB="0.478431" align="middle">%s$(gender) %s$(playername)</label>
+
+	<item id="button_new_game" object="menu_newGame" tabPrev="button_exit" onClick="runFunction('mouseClickNewGame');" onMouseEnter="runFunction('newGameMouseEnter');" onMouseLeave="unselect();" script="fortix2MenuNewGameButtonScript"/>
+	<item id="button_options" object="menu_options" onClick="runFunction('mouseClickOptions');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);"/>
+	<item id="button_high_scores" object="menu_highScores" onClick="runFunction('mouseClickHighScores');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);"/>
+	<item id="button_achievements" object="menu_achievements" onClick="runFunction('mouseClickAchievements');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);"/>
+	<item id="button_profiles" object="menu_profiles" onClick="runFunction('mouseClickProfiles');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);"/>
+	<item id="button_exit" object="menu_exit" tabNext="button_new_game" onClick="runFunction('mouseClickExit');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);"/>
+
+	<item id="menu_dragonSmoke" object="menu_dragonSmoke" tabNext="button_new_game" tabPrev="button_exit" script="defaultItemAnimatorScript"/>
+	<item id="menu_bird" object="menu_bird" tabNext="button_new_game" tabPrev="button_exit" onMouseEnter="mouseEnter();" onMouseLeave="mouseLeave()" script="fortix2MenuBirdScript"/>
+
+	<item id="menu_switchZombieMode" tabNext="button_new_game" tabPrev="button_exit" dynamic="true" onClick="runSequence('switchZombieMode');" onMouseEnter="runFunction('onSwitchZombieMode');" onMouseLeave="setTextColor(0.917647, 0.839216, 0.250980);">
+		<label id="menu_switchZombieModeText" object="menu_switchZombieModeText" font="Otari-Bold_simple" colorR="0.917647" colorG="0.839216" colorB="0.250980" align="right">%s$(switchText)</label>
+	</item>
+
+	<script>
+		function mouseClickNewGame()
+		{
+			playSound('menu_select');
+			onClick();
+		}
+		sequence goToMapSeq()
+		{
+			fadeOut(0.5, true);
+			playMusic('music/map');
+			setMapPage();
+			showStoryIfNeeded();
+			checkDemoVersion();
+			waitFrame(2);
+			fadeIn(0.5, true);
+		}
+		function newGameMouseEnter()
+		{
+			playSound('menu_move');
+			select();
+		}
+		function mouseClickOptions()
+		{
+			playSound('menu_select');
+			setPage('options');
+		}
+		function mouseClickHighScores()
+		{
+			playSound('menu_select');
+			setPage('leaderboard');
+		}
+		function mouseClickAchievements()
+		{
+			playSound('menu_select');
+			setPage('achievements');
+		}
+		function mouseClickProfiles()
+		{
+			playSound('menu_select');
+			setPage('profile_settings');
+		}
+		function mouseClickExit()
+		{
+			playSound('menu_select');
+			setPage('messageBoxExit', false);
+		}
+		function onSwitchZombieMode()
+		{
+			playSound('menu_move');
+			setTextColor(0.746, 0.0, 0.0);
+		}
+	</script>
+</page>

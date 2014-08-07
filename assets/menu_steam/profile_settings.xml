@@ -1,0 +1,57 @@
+<page id="profile_settings" source="levels/menu/menu.nml" groupName="profile_settings" script="fortix2MenuProfileSettingsPageScript">
+	<label id="profileSettings_title" object="profileSettings_title" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 spacing=0.85 align="middle">%s$(gender) %s$(playername)</label>
+	
+	<label id="profileSettings_statisticsText" object="profileSettings_statisticsText" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 spacing=0.85 align="left">Statistics:</label>
+	<label id="profileSettings_distanceText" object="profileSettings_distanceText" font="Otari-Bold_simple" colorR=0.470588 colorG=0.345098 colorB=0.176471 spacing=0.85 align="left">Distance travelled</label>
+	<label id="profileSettings_distanceValue" object="profileSettings_distanceValue" font="Otari-Bold_simple" colorR=0.537255 colorG=0.192157 colorB=0.074510 spacing=0.85 align="right">%0.1f$(distance)</label>
+	<label id="profileSettings_distanceUnit" object="profileSettings_distanceUnit" font="Otari-Bold_simple" colorR=0.537255 colorG=0.192157 colorB=0.074510 spacing=0.85 align="left">miles</label>
+	<label id="profileSettings_towersText" object="profileSettings_towersText" font="Otari-Bold_simple" colorR=0.470588 colorG=0.345098 colorB=0.176471 spacing=0.85 align="left">Towers ruined</label>
+	<label id="profileSettings_towersValue" object="profileSettings_towersValue" font="Otari-Bold_simple" colorR=0.537255 colorG=0.192157 colorB=0.074510 spacing=0.85 align="right">%d$(towers)</label>
+	<label id="profileSettings_dragonsText" object="profileSettings_dragonsText" font="Otari-Bold_simple" colorR=0.470588 colorG=0.345098 colorB=0.176471 spacing=0.85 align="left">Monsters slain</label>
+	<label id="profileSettings_dragonsValue" object="profileSettings_dragonsValue" font="Otari-Bold_simple" colorR=0.537255 colorG=0.192157 colorB=0.074510 spacing=0.85 align="right">%d$(monsters)</label>
+	<label id="profileSettings_powerupsText" object="profileSettings_powerupsText" font="Otari-Bold_simple" colorR=0.470588 colorG=0.345098 colorB=0.176471 spacing=0.85 align="left">Power-ups used</label>
+	<label id="profileSettings_powerupsValue" object="profileSettings_powerupsValue" font="Otari-Bold_simple" colorR=0.537255 colorG=0.192157 colorB=0.074510 spacing=0.85 align="right">%d$(powerups)</label>
+	<label id="profileSettings_captureText" object="profileSettings_captureText" font="Otari-Bold_simple" colorR=0.470588 colorG=0.345098 colorB=0.176471 spacing=0.85 align="left">Avg. captures/level</label>
+	<label id="profileSettings_captureValue" object="profileSettings_captureValue" font="Otari-Bold_simple" colorR=0.537255 colorG=0.192157 colorB=0.074510 spacing=0.85 align="right">%0.1f$(captures)</label>
+
+	
+	<label id="profileSettings_chooseDifficultyText" object="profileSettings_chooseDifficultyText" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 spacing=0.85 align="left">Choose difficulty:</label>
+	<item id="profileSettings_difficulty0" object="profileSettings_difficultyEasy" tabPrev="profileSettings_ok" tabNext="profileSettings_difficulty1" onClick="onSelectDifficulty(0);" onMouseEnter="runFunction('mouseEnterDifficulty');" onMouseLeave="unhighlight();" script="fortix2MenuDifficultyButtonScript">
+		<label id="profileSettings_difficultyEasyText" object="profileSettings_difficultyEasyText" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="left">Easy</label>
+	</item>
+	<label id="profileSettings_difficultyEasyProgress" object="profileSettings_difficultyEasyProgress" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="right">%d$(progress0)%%</label>
+	<item id="profileSettings_deleteProgress0" object="profileSettings_deleteProgress0" tabPrev="profileSettings_ok" tabNext="profileSettings_difficulty1" onClick="deleteProgress(0);" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<item id="profileSettings_difficulty1" object="profileSettings_difficultyNormal" tabPrev="profileSettings_difficulty0" tabNext="profileSettings_difficulty2" onClick="onSelectDifficulty(1);" onMouseEnter="runFunction('mouseEnterDifficulty');" onMouseLeave="unhighlight();" script="fortix2MenuDifficultyButtonScript">
+		<label id="profileSettings_difficultyNormalText" object="profileSettings_difficultyNormalText" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="left">Normal</label>
+	</item>
+	<label id="profileSettings_difficultyNormalProgress" object="profileSettings_difficultyNormalProgress" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="right">%d$(progress1)%%</label>
+	<item id="profileSettings_deleteProgress1" object="profileSettings_deleteProgress1" tabPrev="profileSettings_difficulty0" tabNext="profileSettings_difficulty2" onClick="deleteProgress(1);" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<item id="profileSettings_difficulty2" object="profileSettings_difficultyHard" tabPrev="profileSettings_difficulty1" tabNext="profileSettings_difficulty3" onClick="onSelectDifficulty(2);" onMouseEnter="runFunction('mouseEnterDifficulty');" onMouseLeave="unhighlight();" script="fortix2MenuDifficultyButtonScript">
+		<label id="profileSettings_difficultyHardText" object="profileSettings_difficultyHardText" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="left">Hard</label>
+	</item>
+	<label id="profileSettings_difficultyHardProgress" object="profileSettings_difficultyHardProgress" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="right">%d$(progress2)%%</label>
+	<item id="profileSettings_deleteProgress2" object="profileSettings_deleteProgress2" tabPrev="profileSettings_difficulty1" tabNext="profileSettings_difficulty3" onClick="deleteProgress(2);" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<item id="profileSettings_difficulty3" object="profileSettings_difficultyImpossible" tabPrev="profileSettings_difficulty2" tabNext="profileSettings_ok" onClick="onSelectDifficulty(3);" onMouseEnter="runFunction('mouseEnterDifficulty');" onMouseLeave="unhighlight();" script="fortix2MenuDifficultyButtonScript">
+		<label id="profileSettings_difficultyImpossibleText" object="profileSettings_difficultyImpossibleText" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="left">Impossible</label>
+	</item>
+	<label id="profileSettings_difficultyImpossibleProgress" object="profileSettings_difficultyImpossibleProgress" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="right">%d$(progress3)%%</label>
+	<item id="profileSettings_deleteProgress3" object="profileSettings_deleteProgress3" tabPrev="profileSettings_difficulty2" tabNext="profileSettings_ok" onClick="deleteProgress(3);" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<item id="profileSettings_ok" initItem backItem object="profileSettings_ok" tabPrev="profileSettings_difficulty3" tabNext="profileSettings_difficulty0" onClick="runFunction('mouseClickOk');" onMouseEnter="runFunction('mouseEnterDefaultButton')" onMouseLeave="setButtonState(0);"/>
+
+	<script>
+		function mouseClickOk()
+		{
+			playSound('menu_select');
+			setPage('main_menu');
+		}
+		function mouseEnterDifficulty()
+		{
+			playSound('menu_move');
+			highlight();
+		}
+	</script>
+</page>

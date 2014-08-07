@@ -1,0 +1,96 @@
+<page id="map1" source="levels/menu/menu.nml" groupName="mapClassics" script="fortix2MenuLevelSelectPageScript">
+	<item id="territory17" object="mapClassics_territory_00" onKey="onLevelSelectKey();" onClick="startLevel(17);" script="fortix2MenuLevelSelectButtonScript"/>
+	<item id="territory18" object="mapClassics_territory_01" onKey="onLevelSelectKey();" onClick="startLevel(18);" script="fortix2MenuLevelSelectButtonScript"/>
+	<item id="territory19" object="mapClassics_territory_02" onKey="onLevelSelectKey();" onClick="startLevel(19);" script="fortix2MenuLevelSelectButtonScript"/>
+	<item id="territory20" object="mapClassics_territory_03" onKey="onLevelSelectKey();" onClick="startLevel(20);" script="fortix2MenuLevelSelectButtonScript"/>
+	<item id="territory21" object="mapClassics_territory_04" onKey="onLevelSelectKey();" onClick="startLevel(21);" script="fortix2MenuLevelSelectButtonScript"/>
+	<item id="territory22" object="mapClassics_territory_05" onKey="onLevelSelectKey();" onClick="startLevel(22);" script="fortix2MenuLevelSelectButtonScript"/>
+	<item id="territory23" object="mapClassics_territory_06" onKey="onLevelSelectKey();" onClick="startLevel(23);" script="fortix2MenuLevelSelectButtonScript"/>
+	<item id="territory24" object="mapClassics_territory_07" onKey="onLevelSelectKey();" onClick="startLevel(24);" script="fortix2MenuLevelSelectButtonScript"/>
+	<item id="territory25" object="mapClassics_territory_08" onKey="onLevelSelectKey();" onClick="startLevel(25);" script="fortix2MenuLevelSelectButtonScript"/>
+	<item id="territory26" object="mapClassics_territory_09" onKey="onLevelSelectKey();" onClick="startLevel(26);" script="fortix2MenuLevelSelectButtonScript"/>
+	<item id="territory27" object="mapClassics_territory_10" onKey="onLevelSelectKey();" onClick="startLevel(27);" script="fortix2MenuLevelSelectButtonScript"/>
+	<item id="territory28" object="mapClassics_territory_11" onKey="onLevelSelectKey();" onClick="startLevel(28);" script="fortix2MenuLevelSelectButtonScript"/>
+	<item id="territory29" object="mapClassics_territory_12" onKey="onLevelSelectKey();" onClick="startLevel(29);" script="fortix2MenuLevelSelectButtonScript"/>
+	<item id="territory30" object="mapClassics_territory_13" onKey="onLevelSelectKey();" onClick="startLevel(30);" script="fortix2MenuLevelSelectButtonScript"/>
+	<item id="territory31" object="mapClassics_territory_14" onKey="onLevelSelectKey();" onClick="startLevel(31);" script="fortix2MenuLevelSelectButtonScript"/>
+
+	<label id="counter_00" object="mapClassics_counter_00" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">1</label>
+	<label id="counter_01" object="mapClassics_counter_01" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">2</label>
+	<label id="counter_02" object="mapClassics_counter_02" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">3</label>
+	<label id="counter_03" object="mapClassics_counter_03" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">4</label>
+	<label id="counter_04" object="mapClassics_counter_04" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">5</label>
+	<label id="counter_05" object="mapClassics_counter_05" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">6</label>
+	<label id="counter_06" object="mapClassics_counter_06" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">7</label>
+	<label id="counter_07" object="mapClassics_counter_07" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">8</label>
+	<label id="counter_08" object="mapClassics_counter_08" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">9</label>
+	<label id="counter_09" object="mapClassics_counter_09" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">10</label>
+	<label id="counter_10" object="mapClassics_counter_10" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">11</label>
+	<label id="counter_11" object="mapClassics_counter_11" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">12</label>
+	<label id="counter_12" object="mapClassics_counter_12" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">13</label>
+	<label id="counter_13" object="mapClassics_counter_13" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">14</label>
+	<label id="counter_14" object="mapClassics_counter_14" font="Otari-Bold_simple" colorR=1.000000 colorG=1.000000 colorB=1.000000 align="middle">15</label>
+
+	<item id="crownPerfect_00" object="mapClassics_crownPerfect_00" script="defaultItemAnimatorScript"/>
+	<item id="crownPerfect_01" object="mapClassics_crownPerfect_01" script="defaultItemAnimatorScript"/>
+	<item id="crownPerfect_02" object="mapClassics_crownPerfect_02" script="defaultItemAnimatorScript"/>
+	<item id="crownPerfect_03" object="mapClassics_crownPerfect_03" script="defaultItemAnimatorScript"/>
+	<item id="crownPerfect_04" object="mapClassics_crownPerfect_04" script="defaultItemAnimatorScript"/>
+	<item id="crownPerfect_05" object="mapClassics_crownPerfect_05" script="defaultItemAnimatorScript"/>
+	<item id="crownPerfect_06" object="mapClassics_crownPerfect_06" script="defaultItemAnimatorScript"/>
+	<item id="crownPerfect_07" object="mapClassics_crownPerfect_07" script="defaultItemAnimatorScript"/>
+	<item id="crownPerfect_08" object="mapClassics_crownPerfect_08" script="defaultItemAnimatorScript"/>
+	<item id="crownPerfect_09" object="mapClassics_crownPerfect_09" script="defaultItemAnimatorScript"/>
+	<item id="crownPerfect_10" object="mapClassics_crownPerfect_10" script="defaultItemAnimatorScript"/>
+	<item id="crownPerfect_11" object="mapClassics_crownPerfect_11" script="defaultItemAnimatorScript"/>
+	<item id="crownPerfect_12" object="mapClassics_crownPerfect_12" script="defaultItemAnimatorScript"/>
+	<item id="crownPerfect_13" object="mapClassics_crownPerfect_13" script="defaultItemAnimatorScript"/>
+	<item id="crownPerfect_14" object="mapClassics_crownPerfect_14" script="defaultItemAnimatorScript"/>
+
+	<item id="sword_00" object="mapClassics_sword_00" script="defaultItemAnimatorScript"/>
+	<item id="sword_01" object="mapClassics_sword_01" script="defaultItemAnimatorScript"/>
+	<item id="sword_02" object="mapClassics_sword_02" script="defaultItemAnimatorScript"/>
+	<item id="sword_03" object="mapClassics_sword_03" script="defaultItemAnimatorScript"/>
+	<item id="sword_04" object="mapClassics_sword_04" script="defaultItemAnimatorScript"/>
+	<item id="sword_05" object="mapClassics_sword_05" script="defaultItemAnimatorScript"/>
+	<item id="sword_06" object="mapClassics_sword_06" script="defaultItemAnimatorScript"/>
+	<item id="sword_07" object="mapClassics_sword_07" script="defaultItemAnimatorScript"/>
+	<item id="sword_08" object="mapClassics_sword_08" script="defaultItemAnimatorScript"/>
+	<item id="sword_09" object="mapClassics_sword_09" script="defaultItemAnimatorScript"/>
+	<item id="sword_10" object="mapClassics_sword_10" script="defaultItemAnimatorScript"/>
+	<item id="sword_11" object="mapClassics_sword_11" script="defaultItemAnimatorScript"/>
+	<item id="sword_12" object="mapClassics_sword_12" script="defaultItemAnimatorScript"/>
+	<item id="sword_13" object="mapClassics_sword_13" script="defaultItemAnimatorScript"/>
+	<item id="sword_14" object="mapClassics_sword_14" script="defaultItemAnimatorScript"/>
+
+	<item id="previousMap" object="mapClassics_button_artalom" tabNext="territory17" tabPrev="previousMap" onKey="previousMapOnKey();" onClick="runSequence('backToMapPage');" onMouseEnter="runFunction('mouseEnterMapSwitcher');" onMouseLeave="setVisible(false);" />
+	<item id="backToMenu" backItem object="mapClassics_backToMenu" onKey="backButtonOnKey();" onClick="runSequence('backToMenu');" onMouseEnter="runFunction('mouseEnterBack');" onMouseLeave="setButtonState(0);" />
+
+	<script>
+		sequence backToMenu()
+		{
+			playSound('menu_select');
+			fadeOut(0.5, true);
+			playMusic('music/menu');
+			setPage('main_menu');
+			unbindMaterial('/Screens/map/map_classics');
+			waitFrame(2);
+			fadeIn(0.5, true);
+		}
+		function mouseEnterBack()
+		{
+			playSound('menu_move');
+			setButtonState(1);
+			stopGlow();
+		}
+		sequence backToMapPage()
+		{
+			playSound('menu_select');
+			fadeOut(0.5, false);
+			setPage('map');
+			unbindMaterial('/Screens/map/map_classics');
+			waitFrame(2);
+			fadeIn(0.5, false);
+		}
+	</script>
+</page>

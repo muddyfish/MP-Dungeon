@@ -1,0 +1,116 @@
+<page id="map" source="levels/menu/menu.nml" groupName="map" script="fortix2MapPageScript">
+	<item id="territory0" object="map_territory0_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory1" object="map_territory1_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory2" object="map_territory2_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory3" object="map_territory3_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory4" object="map_territory4_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory5" object="map_territory5_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory6" object="map_territory6_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory7" object="map_territory7_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory8" object="map_territory8_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory9" object="map_territory9_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory10" object="map_territory10_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory11" object="map_territory11_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory12" object="map_territory12_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory13" object="map_territory13_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory14" object="map_territory14_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory15" object="map_territory15_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory16" object="map_territory16_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="territory254" object="map_territory254_0" onKey="handleKeyEvent();" onClick="runFunction('prepareTerritory');" script="fortix2MenuTerritoryButtonScript"/>
+	<item id="map_back" backItem object="map_backToMenu" onKey="backButtonOnKey()" onClick="runSequence('backToMenu');" onMouseEnter="runFunction('mouseEnter');" onMouseLeave="setButtonState(0);" />
+
+	<item id="map_crownPerfect0_0" object="map_crownPerfect0_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect1_0" object="map_crownPerfect1_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect2_0" object="map_crownPerfect2_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect3_0" object="map_crownPerfect3_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect4_0" object="map_crownPerfect4_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect5_0" object="map_crownPerfect5_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect6_0" object="map_crownPerfect6_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect7_0" object="map_crownPerfect7_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect7_1" object="map_crownPerfect7_1" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect8_0" object="map_crownPerfect8_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect8_1" object="map_crownPerfect8_1" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect9_0" object="map_crownPerfect9_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect9_1" object="map_crownPerfect9_1" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect10_0" object="map_crownPerfect10_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect10_1" object="map_crownPerfect10_1" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect11_0" object="map_crownPerfect11_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect11_1" object="map_crownPerfect11_1" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect12_0" object="map_crownPerfect12_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect12_1" object="map_crownPerfect12_1" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect12_2" object="map_crownPerfect12_2" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect13_0" object="map_crownPerfect13_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect13_1" object="map_crownPerfect13_1" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect13_2" object="map_crownPerfect13_2" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect14_0" object="map_crownPerfect14_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect14_1" object="map_crownPerfect14_1" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect14_2" object="map_crownPerfect14_2" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect15_0" object="map_crownPerfect15_0" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect15_1" object="map_crownPerfect15_1" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect15_2" object="map_crownPerfect15_2" script="defaultItemAnimatorScript"/>
+	<item id="map_crownPerfect16_0" object="map_crownPerfect16_0" script="defaultItemAnimatorScript"/>
+
+	<item id="map_halberd0_0" object="map_halberd0_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd1_0" object="map_halberd1_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd2_0" object="map_halberd2_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd3_0" object="map_halberd3_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd4_0" object="map_halberd4_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd5_0" object="map_halberd5_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd6_0" object="map_halberd6_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd7_0" object="map_halberd7_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd8_0" object="map_halberd8_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd9_0" object="map_halberd9_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd10_0" object="map_halberd10_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd11_0" object="map_halberd11_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd12_0" object="map_halberd12_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd13_0" object="map_halberd13_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd14_0" object="map_halberd14_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd15_0" object="map_halberd15_0" script="defaultItemAnimatorScript"/>
+	<item id="map_halberd16_0" object="map_halberd16_0" script="defaultItemAnimatorScript"/>
+
+	<item id="map_smoke" object="map_smoke" script="defaultItemAnimatorScript"/>
+	<item id="map_powerupClose" object="map_powerupClose" onClick="onCloseClick();" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+	<item id="nextMap" object="map_button_classics" onKey="onNextMapKey();" onClick="runSequence('goToClassicsPage');" onMouseEnter="runFunction('mouseEnterMapSwitcher');" onMouseLeave="setVisible(false);" />
+
+	<script>
+		sequence backToMenu()
+		{
+			playSound('menu_select');
+			fadeOut(0.5, true);
+			playMusic('music/menu');
+			setPage('main_menu');
+			unbindMaterial('/Screens/map/map');
+			unbindMaterial('/Screens/map/map_elfoglalt_texture_-sziget');
+			unbindMaterial('/Screens/map/map_glow');
+			unbindMaterial('/Screens/map/map_hatarok');
+			unbindMaterial('/Screens/map/map_smoke');
+			waitFrame(2);
+			fadeIn(0.5, true);
+		}
+		function prepareTerritory()
+		{
+			playSound('menu_select');
+			selectCastleIfNecessary();
+		}
+		function mouseEnter()
+		{
+			playSound('menu_move');
+			setButtonState(1);
+			stopGlow();
+		}
+		sequence goToClassicsPage()
+		{
+			playSound('menu_select');
+			fadeOut(0.5, false);
+			setPage('map1');
+			unbindMaterial('/Screens/map/map');
+			unbindMaterial('/Screens/map/map_elfoglalt_texture_-sziget');
+			unbindMaterial('/Screens/map/map_glow');
+			unbindMaterial('/Screens/map/map_hatarok');
+			unbindMaterial('/Screens/map/map_smoke');
+			showClassicsUnlockedIfNeeded();
+			waitFrame(2);
+			fadeIn(0.5, false);
+		}
+	</script>
+</page>

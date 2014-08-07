@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<graph version="0.1">
+	<points>
+		<point id="0">
+			<position x="746.999512" y="143.001358" z="1.000000" />
+		</point>
+		<point id="1">
+			<position x="728.999268" y="151.001099" z="1.000000" />
+		</point>
+		<point id="2">
+			<position x="751.000061" y="221.000168" z="1.000000" />
+		</point>
+		<point id="3">
+			<position x="789.000000" y="263.000000" z="1.000000" />
+		</point>
+		<point id="4">
+			<position x="859.000000" y="281.000000" z="1.000000" />
+		</point>
+		<point id="5">
+			<position x="891.999939" y="327.000000" z="1.000000" />
+		</point>
+		<point id="6">
+			<position x="911.999939" y="323.000000" z="1.000000" />
+		</point>
+		<point id="7">
+			<position x="917.999390" y="277.000122" z="1.000000" />
+		</point>
+		<point id="8">
+			<position x="899.999756" y="254.000000" z="1.000000" />
+		</point>
+		<point id="9">
+			<position x="808.000000" y="183.000015" z="1.000000" />
+		</point>
+		<point id="10">
+			<position x="763.000000" y="170.000015" z="1.000000" />
+		</point>
+	</points>
+	<edges>
+		<edge start="0" end="1" />
+		<edge start="1" end="2" />
+		<edge start="2" end="3" />
+		<edge start="3" end="4" />
+		<edge start="4" end="5" />
+		<edge start="5" end="6" />
+		<edge start="6" end="7" />
+		<edge start="7" end="8" />
+		<edge start="8" end="9" />
+		<edge start="9" end="10" />
+		<edge start="10" end="0" />
+	</edges>
+</graph>

@@ -1,0 +1,834 @@
+<?xml version="1.0"?>
+<level version="0.1">
+	<properties>
+		<property key="script" value="fortix2LevelScript" />
+		<property key="backgroundMaterial" value="/levels/classic/12/c_level_12" />
+		<property key="levelTime" value="540" />
+	</properties>
+	<instances>
+		<instance iid="1" name="graph.water.0000">
+			<graphref set="/levels/classic/12" filename="graph.water.0000" />
+		</instance>
+		<instance iid="2" name="graph.water.0001">
+			<graphref set="/levels/classic/12" filename="graph.water.0001" />
+		</instance>
+		<instance iid="3" name="background">
+			<objectref set="/levels/classic/12" filename="background" />
+			<frame time="0.000000">
+				<position x="640.000000" y="400.000000" z="200.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="4" name="background_b">
+			<objectref set="/levels/classic/12" filename="background_b" />
+			<frame time="0.000000">
+				<position x="640.000000" y="400.000000" z="90.099998" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="5" name="tower.000" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="166.000000" y="684.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="6" name="tower.001" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="259.000000" y="685.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="7" name="tower.002" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="257.000000" y="589.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="8" name="tower.003" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="165.000000" y="589.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="9" name="tower.004" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="1022.000000" y="685.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="10" name="tower.005" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="1116.000000" y="685.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="11" name="tower.006" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="1116.000000" y="590.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="12" name="tower.007" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="1024.000000" y="590.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="13" name="tower.008" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="1023.000000" y="282.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="14" name="tower.009" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="1116.000000" y="283.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="15" name="tower.010" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="1117.000000" y="187.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="16" name="tower.011" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="1023.000000" y="188.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="17" name="tower.012" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="166.000000" y="282.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="18" name="tower.013" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="258.000000" y="282.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="19" name="tower.014" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="258.000000" y="188.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="20" name="tower.015" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="164.000000" y="187.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="21" name="tower.016" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="573.000000" y="603.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="22" name="tower.017" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="718.000000" y="603.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="23" name="tower.018" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="814.000000" y="504.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="24" name="tower.019" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="815.000000" y="362.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="25" name="tower.020" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="715.000000" y="257.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="26" name="tower.021" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="577.000000" y="258.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="27" name="tower.022" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="476.000000" y="358.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="28" name="tower.023" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="474.000000" y="500.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="29" name="tower.024" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="600.000000" y="548.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="30" name="tower.025" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="691.000000" y="546.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="31" name="tower.026" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="762.000000" y="480.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="32" name="tower.027" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="758.000000" y="384.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="33" name="tower.028" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="695.000000" y="318.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="34" name="tower.029" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="599.000000" y="319.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="35" name="tower.030" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="531.000000" y="382.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="36" name="tower.031" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="532.000000" y="479.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="37" name="tower.032" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="596.000000" y="480.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="38" name="tower.033" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="689.000000" y="479.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="39" name="tower.034" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="689.000000" y="384.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="40" name="tower.035" group="entity">
+			<objectref set="/sets/Green/tower" filename="tower" />
+			<frame time="0.000000">
+				<position x="596.000000" y="384.000000" z="40.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="41" name="catapult.000" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="126.000000" y="693.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="42" name="catapult.001" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="1162.000000" y="707.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="43" name="catapult.002" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="128.000000" y="164.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="44" name="catapult.003" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="1189.000000" y="266.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="45" name="catapult.004" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="294.000000" y="503.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="46" name="catapult.005" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="384.000000" y="163.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="47" name="catapult.006" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="490.000000" y="209.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="48" name="catapult.007" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="229.000000" y="436.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="49" name="catapult.008" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="400.000000" y="713.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="50" name="catapult.009" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="564.000000" y="431.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="51" name="catapult.010" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="725.000000" y="429.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="52" name="catapult.011" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="633.000000" y="710.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="53" name="catapult.012" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="679.000000" y="710.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="54" name="catapult.013" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="656.000000" y="675.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="55" name="catapult.014" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="1047.000000" y="433.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="56" name="catapult.015" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="1140.000000" y="395.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="57" name="catapult.016" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="1140.000000" y="473.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="58" name="catapult.017" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="628.000000" y="167.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="59" name="catapult.018" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="674.000000" y="167.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="60" name="catapult.019" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="651.000000" y="200.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="61" name="catapult.020" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="903.000000" y="436.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="62" name="catapult.021" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="134.000000" y="394.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="63" name="catapult.022" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="494.000000" y="661.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="64" name="catapult.023" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="791.000000" y="644.999512" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="65" name="catapult.024" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="890.000000" y="172.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="66" name="catapult.025" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="94.000000" y="302.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="67" name="catapult.026" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="137.000000" y="491.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="68" name="catapult.027" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="1201.000000" y="571.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="69" name="catapult.028" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="298.000000" y="370.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="70" name="catapult.029" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="896.000000" y="707.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="71" name="catapult.030" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="806.000000" y="218.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="72" name="catapult.031" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="968.000000" y="500.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="73" name="catapult.032" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="87.000000" y="566.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="74" name="catapult.033" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="976.000000" y="372.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="75" name="catapult.034" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="370.000000" y="438.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="76" name="catapult.035" group="entity">
+			<objectref set="/Common/catapult" filename="catapult" />
+			<frame time="0.000000">
+				<position x="1150.000000" y="152.000000" z="70.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="77" name="xitrof.000" group="entity">
+			<objectref set="/characters/xitrof" filename="xitrof" />
+			<frame time="0.000000">
+				<position x="450.000000" y="568.000000" z="37.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="78" name="dragon_green.000" group="entity">
+			<objectref set="/characters/green_dragon" filename="dragon_green" />
+			<frame time="0.000000">
+				<position x="400.000000" y="400.000000" z="39.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="79" name="dragon_green.001" group="entity">
+			<objectref set="/characters/green_dragon" filename="dragon_green" />
+			<frame time="0.000000">
+				<position x="1100.000000" y="200.000000" z="39.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="80" name="dragon_bone.000" group="entity">
+			<objectref set="/characters/bone_dragon" filename="dragon_bone" />
+			<frame time="0.000000">
+				<position x="700.000000" y="300.000000" z="39.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="81" name="dragon_black.000" group="entity">
+			<objectref set="/characters/black_dragon" filename="dragon_black" />
+			<frame time="0.000000">
+				<position x="200.000000" y="600.000000" z="39.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="82" name="level_flag.000" group="level_flag">
+			<objectref set="/Common/level_flag" filename="level_flag" />
+			<frame time="0.000000">
+				<position x="642.000000" y="430.000000" z="78.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="83" name="level_flag.001" group="level_flag">
+			<objectref set="/Common/level_flag" filename="level_flag" />
+			<frame time="0.000000">
+				<position x="222.000000" y="632.000000" z="78.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="84" name="level_flag.002" group="level_flag">
+			<objectref set="/Common/level_flag" filename="level_flag" />
+			<frame time="0.000000">
+				<position x="1061.000000" y="628.000000" z="78.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="85" name="level_flag.003" group="level_flag">
+			<objectref set="/Common/level_flag" filename="level_flag" />
+			<frame time="0.000000">
+				<position x="1061.000000" y="236.000000" z="78.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="86" name="level_flag.004" group="level_flag">
+			<objectref set="/Common/level_flag" filename="level_flag" />
+			<frame time="0.000000">
+				<position x="221.000000" y="239.000000" z="78.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="87" name="batCave.000" group="entity">
+			<objectref set="/Common/bat_cave" filename="batCave" />
+			<frame time="0.000000">
+				<position x="201.000000" y="508.000000" z="86.500000" />
+				<rotation _11="-0.000000" _12="-1.000000" _13="0.000000" _21="1.000000" _22="-0.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="88" name="batCave.001" group="entity">
+			<objectref set="/Common/bat_cave" filename="batCave" />
+			<frame time="0.000000">
+				<position x="912.000000" y="533.000000" z="86.500000" />
+				<rotation _11="-0.000000" _12="-1.000000" _13="0.000000" _21="1.000000" _22="-0.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="89" name="zombie.000" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="637.000000" y="701.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="90" name="zombie.001" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="825.000000" y="298.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="91" name="zombie.002" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="382.000000" y="298.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="92" name="zombie.003" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="1068.000000" y="373.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="93" name="zombie.004" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="843.000000" y="572.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="94" name="zombie.005" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="990.000000" y="442.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="95" name="zombie.006" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="909.000000" y="293.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="96" name="zombie.007" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="735.000000" y="656.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="97" name="zombie.008" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="1081.000000" y="497.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="98" name="zombie.009" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="479.000000" y="561.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="99" name="zombie.010" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="401.000000" y="560.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="100" name="zombie.011" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="143.000000" y="463.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="101" name="zombie.012" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="155.000000" y="363.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="102" name="zombie.013" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="378.000000" y="650.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="103" name="zombie.014" group="zombie">
+			<objectref set="/characters/zombie" filename="zombie" />
+			<frame time="0.000000">
+				<position x="437.000000" y="436.000000" z="56.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="104" name="grave.000" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="641.000000" y="434.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="105" name="grave.001" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="224.000000" y="637.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="106" name="grave.002" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="1058.000000" y="629.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="107" name="grave.003" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="1061.000000" y="234.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="108" name="grave.004" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="220.000000" y="244.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="109" name="grave.005" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="0.000000" y="0.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="110" name="grave.006" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="0.000000" y="0.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="111" name="grave.007" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="0.000000" y="0.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="112" name="grave.008" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="0.000000" y="0.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="113" name="grave.009" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="0.000000" y="0.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="114" name="grave.010" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="0.000000" y="0.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="115" name="grave.011" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="0.000000" y="0.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="116" name="grave.012" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="0.000000" y="0.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="117" name="grave.013" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="0.000000" y="0.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="118" name="grave.014" group="level_flag_zombie">
+			<objectref set="/Common/grave" filename="grave" />
+			<frame time="0.000000">
+				<position x="0.000000" y="0.000000" z="86.750000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+		<instance iid="119" name="player">
+			<frame time="0.000000">
+				<position x="640.000000" y="96.000000" z="60.000000" />
+				<rotation _11="1.000000" _12="0.000000" _13="0.000000" _21="0.000000" _22="1.000000" _23="0.000000" _31="0.000000" _32="0.000000" _33="1.000000" />
+			</frame>
+		</instance>
+	</instances>
+</level>

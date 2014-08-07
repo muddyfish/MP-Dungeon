@@ -1,0 +1,17 @@
+<page id="classicsUnlocked" source="levels/menu/menu.nml" groupName="classicsUnlocked">
+	
+	<label id="classicsUnlocked_congrats" object="classicsUnlocked_congrats" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="middle">Congratulations!</label>
+	<label id="classicsUnlocked_message1" object="classicsUnlocked_message0" font="Otari-Bold_simple" colorR=0.235	294 colorG=0.094118 colorB=0.007843 align="middle">classicsUnlocked_0</label>
+	<label id="classicsUnlocked_message0" object="classicsUnlocked_message1" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="middle">classicsUnlocked_1</label>
+
+	<item id="classicsUnlocked_ok" object="classicsUnlocked_ok" initItem backItem onClick="runSequence('backToMapPage');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<script>
+		sequence backToMapPage()
+		{
+			playSound('menu_select');
+			setPage('map1');
+			alignMouseToNextChallangingTerritory();
+		}
+	</script>
+</page>

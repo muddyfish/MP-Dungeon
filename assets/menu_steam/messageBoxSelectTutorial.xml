@@ -1,0 +1,33 @@
+<page id="messageBoxSelectTutorial" source="levels/menu/menu.nml" groupName="messageBoxSelectTutorial" script="fortix2MenuMsgBoxSelectTutorialScript">
+	<label object="selectTutorial_question1" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="middle">Do you want to start</label>
+	<label object="selectTutorial_question2" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="middle">the tutorial first?</label>
+	
+	<item id="selectTutorial_yes" initItem object="selectTutorial_yes" onClick="runSequence('startTutorial');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+	<item id="selectTutorial_no" backItem object="selectTutorial_no" onClick="runSequence('skipTutorial');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<script>
+		sequence startTutorial()
+		{
+			playSound('menu_select');
+			fadeOut(0.5, true);
+			setTutorial();
+			killMenu();
+			initGame();
+			waitFrame(2);
+			fadeIn(0.5, true);
+			unpauseGame();
+		}
+		sequence skipTutorial()
+		{
+			playSound('menu_select');
+			setTutorialSkipped();
+			setPage('main_menu');
+			fadeOut(0.5, true);
+			playMusic('music/map');
+			setPage('map');
+			showStoryIfNeeded();
+			waitFrame(2);
+			fadeIn(0.5, true);
+		}
+	</script>
+</page>

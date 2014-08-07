@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<font version="1.1" materialName="/characterset_Otari-Bold" fixSize="0.0">
+	<char ccode="32" objectName="char_032" posX="0.000000" posY="0.000000" uvSizeX="0.033203" uvSizeY="0.033203" sizeX="34.000000" sizeY="34.000000" advanceX="15.000000" offsetX="0.000000" />
+	<char ccode="43" objectName="char_043" posX="0.401367" posY="0.000000" uvSizeX="0.041992" uvSizeY="0.087891" sizeX="43.000000" sizeY="90.000000" advanceX="36.000000" offsetX="3.000000" />
+	<char ccode="44" objectName="char_044" posX="0.443359" posY="0.000000" uvSizeX="0.022461" uvSizeY="0.087891" sizeX="23.000000" sizeY="90.000000" advanceX="15.000000" offsetX="2.000000" />
+	<char ccode="45" objectName="char_045" posX="0.465820" posY="0.000000" uvSizeX="0.029297" uvSizeY="0.087891" sizeX="30.000000" sizeY="90.000000" advanceX="24.000000" offsetX="3.000000" />
+	<char ccode="46" objectName="char_046" posX="0.495117" posY="0.000000" uvSizeX="0.020508" uvSizeY="0.087891" sizeX="21.000000" sizeY="90.000000" advanceX="15.000000" offsetX="3.000000" />
+	<char ccode="48" objectName="char_048" posX="0.550781" posY="0.000000" uvSizeX="0.047852" uvSizeY="0.087891" sizeX="49.000000" sizeY="90.000000" advanceX="43.000000" offsetX="3.000000" />
+	<char ccode="49" objectName="char_049" posX="0.598633" posY="0.000000" uvSizeX="0.036133" uvSizeY="0.087891" sizeX="37.000000" sizeY="90.000000" advanceX="28.000000" offsetX="2.000000" />
+	<char ccode="50" objectName="char_050" posX="0.634766" posY="0.000000" uvSizeX="0.041016" uvSizeY="0.087891" sizeX="42.000000" sizeY="90.000000" advanceX="33.000000" offsetX="1.000000" />
+	<char ccode="51" objectName="char_051" posX="0.675781" posY="0.000000" uvSizeX="0.039063" uvSizeY="0.087891" sizeX="40.000000" sizeY="90.000000" advanceX="31.000000" offsetX="1.000000" />
+	<char ccode="52" objectName="char_052" posX="0.714844" posY="0.000000" uvSizeX="0.042969" uvSizeY="0.087891" sizeX="44.000000" sizeY="90.000000" advanceX="35.000000" offsetX="2.000000" />
+	<char ccode="53" objectName="char_053" posX="0.757813" posY="0.000000" uvSizeX="0.039063" uvSizeY="0.087891" sizeX="40.000000" sizeY="90.000000" advanceX="32.000000" offsetX="2.000000" />
+	<char ccode="54" objectName="char_054" posX="0.796875" posY="0.000000" uvSizeX="0.041992" uvSizeY="0.087891" sizeX="43.000000" sizeY="90.000000" advanceX="35.000000" offsetX="2.000000" />
+	<char ccode="55" objectName="char_055" posX="0.838867" posY="0.000000" uvSizeX="0.039063" uvSizeY="0.087891" sizeX="40.000000" sizeY="90.000000" advanceX="30.000000" offsetX="1.000000" />
+	<char ccode="56" objectName="char_056" posX="0.877930" posY="0.000000" uvSizeX="0.040039" uvSizeY="0.087891" sizeX="41.000000" sizeY="90.000000" advanceX="35.000000" offsetX="3.000000" />
+	<char ccode="57" objectName="char_057" posX="0.917969" posY="0.000000" uvSizeX="0.041016" uvSizeY="0.087891" sizeX="42.000000" sizeY="90.000000" advanceX="34.000000" offsetX="2.000000" />
+	<char ccode="58" objectName="char_058" posX="0.958984" posY="0.000000" uvSizeX="0.020508" uvSizeY="0.087891" sizeX="21.000000" sizeY="90.000000" advanceX="15.000000" offsetX="3.000000" />
+</font>

@@ -1,9 +1,5 @@
 import pygame, glob, json, os, sys
-os.chdir("/".join(os.path.realpath(__file__).split(os.sep)[:-1]))
-sys.path.append(os.getcwd()+os.sep+"Assets"+os.sep+"Code")
-
-from title import Title
-from main_menu import MainMenu
+from level_loader import LevelLoader
 
 class Main:  
     def __init__(self):
@@ -15,13 +11,15 @@ class Main:
         else: self.full = 0
         #Create the display
         self.screen = pygame.display.set_mode(tuple(self.settings["size"]), self.full) 
-        pygame.display.set_caption("MP-Dungeon")
+        pygame.display.set_caption("Fortix 2")
         self.font=pygame.font.SysFont("vervanda", 12)
         self.fps_colour = pygame.Color(255,255,255)
         self.clock=pygame.time.Clock()
-        self.controllers = {"title": Title,
-                            "main_menu": MainMenu}
-        self.set_controller("title")
+        self.level_loader = LevelLoader(self)
+        self.started = False
+        self.copyright = pygame.transform.smoothscale(\
+            self.load_image("Screens/startscreens/nemesys_flat.nmt"), \
+            self.settings["size"])
 
     def run(self):
         while 1:
@@ -32,13 +30,20 @@ class Main:
                 elif event.type == pygame.KEYDOWN: 
                     if event.key == pygame.K_BACKSPACE: self.screenshot()
                     if event.key == pygame.K_ESCAPE: self.exit()
-            self.screen_controller.run(events) #Other events
             message = self.font.render("FPS: %d"%(self.clock.get_fps()), True, self.fps_colour)
+            if not self.started: self.display_copyright()
+            else: self.level_loader.run(events)
             self.screen.blit(message, (10, 10))
             pygame.display.flip()
 
-    def set_controller(self, controller, *args, **kwargs):
-        self.screen_controller = self.controllers[controller](self, pygame, *args, **kwargs)
+    def display_copyright(self):
+        self.screen.fill((0,0,0))
+        ticks = pygame.time.get_ticks()
+        if 1000 < ticks < 4000:
+            self.copyright.set_alpha((1500-max(abs(2500.0-ticks), 500))*0.256)
+            self.screen.blit(self.copyright, (0,0))
+        self.started = True#9000 < ticks
+        if self.started: self.level_loader.load_file("menu_steam.main_menu")
 
     def screenshot(self):
         print("Screenshot")
@@ -66,7 +71,7 @@ class Main:
 
     def load_image(self, texture_location):
         if texture_location[0] == "/": texture_location = texture_location[1:]
-        image = pygame.image.load(self.load_file("Assets/textures/"+texture_location), ".tga")
+        image = pygame.image.load(self.load_file("assets/textures/"+texture_location), ".tga")
         return image
 
 def main():
@@ -76,5 +81,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-

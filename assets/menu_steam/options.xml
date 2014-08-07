@@ -1,0 +1,66 @@
+<page id="options" source="levels/menu/menu.nml" groupName="options" script="fortix2MenuOptionsPageScript">
+	<label id="options_title" object="options_title" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="middle">Options</label>
+	
+	<label id="options_music_text" object="options_music_text" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 spacing=0.9 align="left">Music Volume</label>
+	<label id="options_sound_text" object="options_sound_text" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 spacing=0.9 align="left">Sound Effect</label>
+	<label id="options_fullscreen_text" object="options_fullscreen_text" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 spacing=0.9 align="left">Full Screen</label>
+	<label id="options_avatar_text" object="options_avatar_text" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 spacing=0.9 align="left">Avatar</label>
+	
+	<item id="musicVolDec" object="musicVol_minus" tabPrev="options_back" tabNext="soundVolItem" onClick="modifyMusicVol(-10);" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+	<item id="musicVolItem" onKey="handleMusicKeyEvent();" tabPrev="options_back" tabNext="soundVolItem" onMouseEnter="runFunction('mouseEnterMusic');" onMouseLeave="setTextColor(0.235294, 0.094118, 0.007843);">
+		<label id="musicVol" object="options_musicVolume" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 spacing=0.9 align="middle">%d$(musicVol)%%</label>
+	</item>
+	<item id="musicVolInc" object="musicVol_plus" tabPrev="options_back" tabNext="soundVolItem" onClick="modifyMusicVol(10);" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<item id="soundVolDec" object="soundVol_minus" tabPrev="musicVolItem" tabNext="fullscreenOnOff" onClick="modifySoundVol(-10);" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+	<item id="soundVolItem" onKey="handleSoundKeyEvent();" tabPrev="musicVolItem" tabNext="fullscreenOnOff" onMouseEnter="runFunction('mouseEnterSound');" onMouseLeave="setTextColor(0.235294, 0.094118, 0.007843);">
+		<label id="soundVol" object="options_soundVolume" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 spacing=0.9 align="middle">%d$(soundVol)%%</label>
+	</item>
+	<item id="soundVolInc" object="soundVol_plus" tabPrev="musicVolItem" tabNext="fullscreenOnOff" onClick="modifySoundVol(10);" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<item id="fullscreenOnOff" object="fullscreen" tabPrev="soundVolItem" tabNext="avatar_button" onClick="runFunction('mouseClickFullscreen');" onMouseEnter="runFunction('mouseMoveFullscreen');" onMouseLeave="unselect();" script="fortix2MenuFullScreenButtonScript"/>
+
+	<item id="avatar_previous" object="avatar_previous" tabPrev="fullscreenOnOff" tabNext="options_back" onClick="changeAvatar(-1);" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+	<item id="avatar_button" object="options_avatarGlow" tabPrev="fullscreenOnOff" tabNext="options_back" onKey="handleAvatarKeyEvent();" onMouseEnter="runFunction('mouseEnterAvatar');" onMouseLeave="mouseLeaveAvatar();" />
+	<item id="avatar_next" object="avatar_next" tabPrev="fullscreenOnOff" tabNext="options_back" onClick="changeAvatar(1);" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<item id="options_back" initItem backItem object="options_back" tabPrev="avatar_button" tabNext="musicVolItem" onClick="runFunction('backFromOptions');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<item id="menu_hamster0" object="menu_hamster0" tabPrev="options_back" tabNext="options_back" dynamic="true" onClick="mouseClick();" script="fortix2MenuOptionsHamsterScript" />
+	<item id="menu_hamster1" object="menu_hamster1" tabPrev="options_back" tabNext="options_back" dynamic="true" onClick="mouseClick();" script="fortix2MenuOptionsHamsterScript" />
+	<item id="menu_hamster2" object="menu_hamster2" tabPrev="options_back" tabNext="options_back" dynamic="true" onClick="mouseClick();" script="fortix2MenuOptionsHamsterScript" />
+
+	<script>
+		function backFromOptions()
+		{
+			playSound('menu_select');
+			applyAndSaveOptionsChanges();
+			setPage('main_menu');
+		}
+		function mouseMoveFullscreen()
+		{
+			playSound('menu_move');
+			select();
+		}
+		function mouseClickFullscreen()
+		{
+			playSound('menu_select');
+			fullscreenOnOff();
+		}
+		function mouseEnterMusic()
+		{
+			playSound('menu_move');
+			setTextColor(0.917647, 0.839216, 0.250980);
+		}
+		function mouseEnterSound()
+		{
+			playSound('menu_move');
+			setTextColor(0.917647, 0.839216, 0.250980);
+		}
+		function mouseEnterAvatar()
+		{
+			playSound('menu_move');
+			mouseEnterAvatar();
+		}
+	</script>
+</page>

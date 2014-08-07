@@ -1,0 +1,12 @@
+<page id="newLandType" source="levels/menu/menu.nml" groupName="newLandType" script="fortix2NewLandTypePageScript">
+	<item id="newLandType_ok" object="newLandType_ok" onClick="runSequence('backToMapPage');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<script>
+		sequence backToMapPage()
+		{
+			playSound('menu_select');
+			setPage('map');
+			alignMouseToNextChallangingTerritory();
+		}
+	</script>
+</page>

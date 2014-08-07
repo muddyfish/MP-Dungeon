@@ -1,0 +1,17 @@
+<page id="finalWin" source="levels/menu/menu.nml" groupName="finalWin" script="fortix2MenuFinalWinPageScript">
+	<item id="finalWin_backToMenu" backItem object="finalWin_backToMenu" onClick="runSequence('backToMenu');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<script>
+		sequence backToMenu()
+		{
+			playSound('menu_select');
+			fadeOut(0.5, true);
+			playMusic('music/menu');
+			setPage('leaderboard');
+			unbindMaterial('/Screens/victory/victory_screen_build');
+			comingFromFinalWin();
+			waitFrame(2);
+			fadeIn(0.5, true);
+		}
+	</script>
+</page>

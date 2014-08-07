@@ -1,0 +1,22 @@
+<page id="messageBoxDeleteProgress" source="levels/menu/menu.nml" groupName="messageBoxDeleteProgress" script="fortix2MenuMsgBoxDeleteProgressScript">
+	<label object="deleteProgress_question0" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="middle">Are you sure you want</label>
+	<label object="deleteProgress_question1" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="middle">to delete your progress</label>
+	<label object="deleteProgress_question2" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="middle">on this difficulty?</label>
+
+	<item id="deleteProgress_yes" object="deleteProgress_yes" onClick="runSequence('deleteSelectedProgress');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+	<item id="deleteProgress_no" initItem backItem object="deleteProgress_no" onClick="runFunction('mouseClickNo')" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<script>
+		sequence deleteSelectedProgress()
+		{
+			playSound('menu_select');
+			deleteProgress();
+			setPage('profile_settings');
+		}
+		function mouseClickNo()
+		{
+			playSound('menu_select');
+			setPage('profile_settings');
+		}
+	</script>
+</page>

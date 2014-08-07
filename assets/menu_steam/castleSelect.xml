@@ -1,0 +1,26 @@
+<page id="castleSelect" source="levels/menu/menu.nml" groupName="castleSelect" script="fortix2MenuCastleSelectPageScript">
+	<label id="castleSelect_title" object="castleSelect_title" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 align="middle">Select castle:</label>
+	<item id="castleSelect_item0" initItem onClick="startCastle(0);" onMouseEnter="runFunction('mouseEnterCastle');" onMouseLeave="setTextColor(0.235294, 0.094118, 0.007843);">
+		<label id="castleSelect_0" object="castleSelect_0" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 spacing=0.9 align="left">Castle 1</label>
+	</item>
+	<item id="castleSelect_item1" onClick="startCastle(1);" onMouseEnter="runFunction('mouseEnterCastle');" onMouseLeave="setTextColor(0.235294, 0.094118, 0.007843);">
+		<label id="castleSelect_1" object="castleSelect_1" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 spacing=0.9 align="left">Castle 2</label>
+	</item>
+	<item id="castleSelect_item2" onClick="startCastle(2);" onMouseEnter="runFunction('mouseEnterCastle');" onMouseLeave="setTextColor(0.235294, 0.094118, 0.007843);">
+		<label id="castleSelect_2" object="castleSelect_2" font="Otari-Bold_simple" colorR=0.235294 colorG=0.094118 colorB=0.007843 spacing=0.9 align="left">Castle 3</label>
+	</item>
+	<item id="castleSelect_cancel" backItem object="castleSelect_cancel" onClick="runFunction('cancelCastleSelect');" onMouseEnter="runFunction('mouseEnterDefaultButton');" onMouseLeave="setButtonState(0);" />
+
+	<script>
+		function cancelCastleSelect()
+		{
+			playSound('menu_select');
+			setPage('map');
+		}
+		function mouseEnterCastle()
+		{
+			playSound('menu_move');
+			setTextColor(1.0, 1.0, 0.0);
+		}
+	</script>
+</page>
